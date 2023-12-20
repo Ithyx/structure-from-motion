@@ -1,0 +1,4 @@
+[env]
+OPENCV_LINK_LIBS = { value = "+opencv_core,opencv_features2d,opencv_sfm,opencv_flann,opencv_imgcodecs", force = true }
+OPENCV_LINK_PATHS = { value = "+/usr/local/lib/opencv4", force = true }
+OPENCV_INCLUDE_PATHS = { value = "+/usr/local/include/opencv4", force = true }

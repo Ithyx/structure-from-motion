@@ -1,0 +1,21 @@
+[package]
+name = "sfm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+flexi_logger = "0.27"
+log = "0.4"
+itertools = "0.12"
+
+opencv = "0.88"
+
+morrigu = { git = "https://github.com/TableauBits/morrigu-rs", rev = "3eb9a520fad80e61956cd75c5f68bb94c20bfdee", features = ["egui"] }
+# morrigu = { path = "/home/ithyx/.rhack/576bedc/", features = ["egui"] }
+bevy_ecs = "0.10"
+egui = "0.22"
+winit = "0.28"
+winit_input_helper = "0.14"
+
