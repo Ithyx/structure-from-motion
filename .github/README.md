@@ -1,6 +1,6 @@
 # Structure from Motion: a re-implementation
 
-![Preview of point cloud extracted](.github/readme.gif)
+![Preview of point cloud extracted](readme.gif)
 
 ## What
 This repo contains a re-implementation of the [*Structure from Motion*](https://en.wikipedia.org/wiki/Structure_from_motion) algoritm, which attempts to rebuild an object using views of this object taken from different viewpoints.
