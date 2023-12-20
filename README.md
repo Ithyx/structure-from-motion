@@ -1,5 +1,7 @@
 # Structure from Motion: a re-implementation
 
+![Preview of point cloud extracted](.github/readme.gif)
+
 ## What
 This repo contains a re-implementation of the [*Structure from Motion*](https://en.wikipedia.org/wiki/Structure_from_motion) algoritm, which attempts to rebuild an object using views of this object taken from different viewpoints.
 This was made as a final project in the computer vision course [IFT 6145](https://diro.umontreal.ca/programmes-cours/cours-horaires/details-de-certains-cours/vision-tridimensionnelle/).
