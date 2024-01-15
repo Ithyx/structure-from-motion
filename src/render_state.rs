@@ -1,6 +1,6 @@
 use std::path::Path;
 
-use bevy_ecs::prelude::Entity;
+use morrigu::bevy_ecs::prelude::Entity;
 use morrigu::{
     allocated_types::AllocatedBuffer,
     application::{ApplicationState, BuildableApplicationState},
@@ -17,6 +17,7 @@ use morrigu::{
     utils::ThreadSafeRef,
     vertices::simple::SimpleVertex,
 };
+use morrigu::{egui, winit};
 
 use crate::camera::ViewerCamera;
 
@@ -103,7 +104,7 @@ impl BuildableApplicationState<PointCloudData> for RenderState {
             // let position = point.position * 10.0;
             let position = point.position * 2.0;
             let transform =
-                Transform::from_trs(&position, &Quat::default(), &Vec3::new(0.003, 0.003, 0.003));
+                Transform::from_trs(&position, &Quat::default(), &Vec3::new(0.005, 0.005, 0.005));
 
             let id = context
                 .ecs_manager
@@ -128,7 +129,7 @@ impl BuildableApplicationState<PointCloudData> for RenderState {
 impl ApplicationState for RenderState {
     fn on_attach(&mut self, context: &mut morrigu::application::StateContext) {
         context.ecs_manager.redefine_systems_schedule(|schedule| {
-            schedule.add_system(mesh_renderer::render_meshes::<Vertex>);
+            schedule.add_systems(mesh_renderer::render_meshes::<Vertex>);
         });
     }
 
